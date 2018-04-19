@@ -1,0 +1,9 @@
+id,name,departure,arrival,Fare,Flag
+IA-211,Indigo Airliner,Coimbatore,London,100,m
+EA-926,Emirates Airways,Dubai,Delhi,101,m
+BA-731,British Airliner,Heathrow,London,102,m
+VA-421,Virgin Airways,Munich,Munich,103,m
+BA-741,British Airliner,Coimbatore,London,104,m
+VA-431,Virgin Airways,Chennai,Munich,105,m
+BA-731,British Airliner,London,Heathrow,106,m
+VA-431,Virgin Airways,Munich,Chennai,107,m

@@ -1,0 +1,30 @@
+package com.kgfsl.newdoll;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+class Duplicate{
+    public static void main(String[] args) {
+        
+String txtFileName = "src/main/resources/trade.csv";
+List<String> list = new ArrayList<>();
+
+       // reading csv file into stream, try-with-resources
+       try (Stream<String> emp = Files.lines(Paths.get(txtFileName))) {
+        list=emp.collect(Collectors.toList());
+        
+        //    list.forEach(System.out::println);
+          
+        List< String > uniqueEmployee = list.stream().distinct().collect(Collectors.toList());
+        System.out.println("Employee List(Unique)");
+        uniqueEmployee.forEach(System.out::println);
+
+       } catch (IOException ioe) {
+           ioe.printStackTrace();
+       }
+    }}

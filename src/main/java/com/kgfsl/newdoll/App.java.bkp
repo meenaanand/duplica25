@@ -1,0 +1,60 @@
+package com.kgfsl.newdoll;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import com.opencsv.CSVReader;
+import com.opencsv.bean.CsvToBean;
+import com.opencsv.bean.HeaderColumnNameMappingStrategy;
+
+public class App {
+
+    public static  void main(String[] args) throws IOException {
+
+      
+        CSVReader reader = new CSVReader(new FileReader("D:/csvfiles/workbook.csv"), ',');
+        
+                HeaderColumnNameMappingStrategy<Giveupwithheader> beanStrategy = new HeaderColumnNameMappingStrategy<Giveupwithheader>();
+                beanStrategy.setType(Giveupwithheader.class);
+                CsvToBean<Giveupwithheader> csvToBean = new CsvToBean<Giveupwithheader>();
+                List<Giveupwithheader> emps = csvToBean.parse(beanStrategy, reader);
+                
+                 System.out.println(emps.stream().count());
+        emps.forEach(System.out::println);
+                reader.close();	
+
+System.out.println("count");
+
+                Map<String, Long> counting = emps.stream().collect(
+                Collectors.groupingBy(Giveupwithheader::getBROK_ID, Collectors.counting()));
+        System.out.println(counting);
+
+        System.out.println("sum");
+
+        System.out.println("////////////SUM///////////////");
+        Map<String, Integer> sum = emps.stream().collect(
+                Collectors.groupingBy(Giveupwithheader::getPART_CODE, Collectors.summingInt(Giveupwithheader::getTRD_QTY)));
+
+        System.out.println(sum);
+
+
+        System.out.println("////////////Group/////////////");
+        Map<String, List<Giveupwithheader>> group = 
+        emps.stream().collect(Collectors.groupingBy(Giveupwithheader::getBROK_ID));
+
+        System.out.println(group);
+
+// group by price, uses 'mapping' to convert List<Item> to Set<String>
+System.out.println("///////////Mapping///////////");
+Map<String, Set<String>> result =
+emps.stream().collect(
+        Collectors.groupingBy(Giveupwithheader::getBROK_ID,Collectors.mapping(Giveupwithheader::getPART_CODE, Collectors.toSet())));
+
+System.out.println(result);
+
+    }
+}

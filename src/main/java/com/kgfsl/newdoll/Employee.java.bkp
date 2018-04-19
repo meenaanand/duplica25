@@ -1,0 +1,92 @@
+package com.kgfsl.newdoll;
+
+public class Employee {
+    private int employeeId; 
+    private String employeeName;
+    private int age;
+    private String location;
+
+    // public Employee(int employeeId, String employeeName,int age,String location) {
+    //     this.employeeId = employeeId;
+    //     this.employeeName = employeeName;
+    //     this.age=age;
+    //     this.location=location;
+    // }
+    public int getEmployeeId() {
+        return employeeId;
+    }
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+    public String getEmployeeName() {
+        return employeeName;
+    }
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
+    }
+    
+    public void setAge(int age) {
+        this.age = age;
+    }
+ 
+    public void setLocation(String location) {
+        this.location = location;
+    }
+   
+    public int getAge() {
+        return age;
+    }
+    public String getLocation() {
+        return location;
+    }
+    // @Override
+    // public boolean equals(Object obj) {
+    //     if (obj instanceof Employee) {
+    //         return ((Employee) obj).employeeId == employeeId &&  ((Employee) obj).employeeName == employeeName 
+    //         &&  ((Employee) obj).age == age &&  ((Employee) obj).location == location ;
+    //     }
+    //    return false;
+        
+    // }
+    @Override
+    public int hashCode() {
+        return this.age;
+    }
+// @Override
+// public String toString() {
+//     return employeeId+employeeName+age+location;
+// }
+}
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    

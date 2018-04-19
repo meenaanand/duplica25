@@ -1,0 +1,289 @@
+package com.kgfsl.newdoll;
+
+import java.util.stream.Stream;
+
+public class Giveupwithheader {
+    
+  
+    private int TRADENUM;
+    
+   
+    private String BS_IND;
+
+    
+    private String BROK_ID;
+  
+    
+    private String PART_CODE;
+
+ 
+    private String INST_TYPE;
+
+   
+    private String SYMBOL;
+
+ 
+    private String EXP_DATE;
+
+   
+    private String STR_PRICE;
+
+    
+    private String OPT_TYPE;
+
+  
+    private int TRD_QTY;
+
+    
+    private double TRD_PRICE;
+
+    
+    private String GV_STS;
+
+ 
+    private String OC_FLAG;
+
+  
+    private String CU_FLAG;
+
+   
+    private String ORDER_NUM;
+    
+   
+    private String LAST_MODIDT;
+    
+    
+    private String RESERVED;
+
+
+/**
+ * @return the bROK_ID
+ */
+public String getBROK_ID() {
+    return BROK_ID;
+}
+
+/**
+ * @return the bS_IND
+ */
+public String getBS_IND() {
+    return BS_IND;
+}
+/**
+ * @return the cU_FLAG
+ */
+public String getCU_FLAG() {
+    return CU_FLAG;
+}
+/**
+ * @return the eXP_DATE
+ */
+public String getEXP_DATE() {
+    return EXP_DATE;
+}
+/**
+ * @return the gV_STS
+ */
+public String getGV_STS() {
+    return GV_STS;
+}
+/**
+ * @return the iNST_TYPE
+ */
+public String getINST_TYPE() {
+    return INST_TYPE;
+}
+/**
+ * @return the lAST_MODIDT
+ */
+public String getLAST_MODIDT() {
+    return LAST_MODIDT;
+}
+/**
+ * @return the oC_FLAG
+ */
+public String getOC_FLAG() {
+    return OC_FLAG;
+}
+
+/**
+ * @return the oPT_TYPE
+ */
+public String getOPT_TYPE() {
+    return OPT_TYPE;
+}
+
+/**
+ * @return the oRDER_NUM
+ */
+public String getORDER_NUM() {
+    return ORDER_NUM;
+}
+/**
+ * @return the pART_CODE
+ */
+public String getPART_CODE() {
+    return PART_CODE;
+}
+
+/**
+ * @return the rESERVED
+ */
+public String getRESERVED() {
+    return RESERVED;
+}
+
+/**
+ * @return the sTR_PRICE
+ */
+public String getSTR_PRICE() {
+    return STR_PRICE;
+}
+/**
+ * @return the sYMBOL
+ */
+public String getSYMBOL() {
+    return SYMBOL;
+}
+/**
+ * @return the tRADENUM
+ */
+public int getTRADENUM() {
+    return TRADENUM;
+}
+/**
+ * @return the tRD_PRICE
+ */
+public double getTRD_PRICE() {
+    return TRD_PRICE;
+}
+/**
+ * @return the tRD_QTY
+ */
+public int getTRD_QTY() {
+    return TRD_QTY;
+}
+
+/**
+ * @param bROK_ID the bROK_ID to set
+ */
+public void setBROK_ID(String bROK_ID) {
+    this.BROK_ID = bROK_ID;
+}
+/**
+ * @param bS_IND the bS_IND to set
+ */
+public void setBS_IND(String bS_IND) {
+    this.BS_IND = bS_IND;
+}
+/**
+ * @param cU_FLAG the cU_FLAG to set
+ */
+public void setCU_FLAG(String cU_FLAG) {
+    this.CU_FLAG = cU_FLAG;
+}
+/**
+ * @param eXP_DATE the eXP_DATE to set
+ */
+public void setEXP_DATE(String eXP_DATE) {
+    this.EXP_DATE = eXP_DATE;
+}
+/**
+ * @param oPT_TYPE the oPT_TYPE to set
+ */
+public void setOPT_TYPE(String oPT_TYPE) {
+    this.OPT_TYPE = oPT_TYPE;
+}/**
+ * @param oRDER_NUM the oRDER_NUM to set
+ */
+public void setORDER_NUM(String oRDER_NUM) {
+    this.ORDER_NUM = oRDER_NUM;
+}/**
+ * @param pART_CODE the pART_CODE to set
+ */
+public void setPART_CODE(String pART_CODE) {
+    this.PART_CODE = pART_CODE;
+}/**
+ * @param rESERVED the rESERVED to set
+ */
+public void setRESERVED(String rESERVED) {
+    this.RESERVED = rESERVED;
+}/**
+ * @param sTR_PRICE the sTR_PRICE to set
+ */
+public void setSTR_PRICE(String sTR_PRICE) {
+    this.STR_PRICE = sTR_PRICE;
+}/**
+ * @param sYMBOL the sYMBOL to set
+ */
+public void setSYMBOL(String sYMBOL) {
+    this.SYMBOL = sYMBOL;
+}/**
+ * @param tRADENUM the tRADENUM to set
+ */
+public void setTRADENUM(int tRADENUM) {
+    this.TRADENUM = tRADENUM;
+}/**
+ * @param tRD_PRICE the tRD_PRICE to set
+ */
+public void setTRD_PRICE(double tRD_PRICE) {
+    this.TRD_PRICE = tRD_PRICE;
+}/**
+ * @param tRD_QTY the tRD_QTY to set
+ */
+public void setTRD_QTY(int tRD_QTY) {
+    this.TRD_QTY = tRD_QTY;
+}
+/**
+ * @param gV_STS the gV_STS to set
+ */
+public void setGV_STS(String gV_STS) {
+    this.GV_STS = gV_STS;
+}
+/**
+ * @param iNST_TYPE the iNST_TYPE to set
+ */
+public void setINST_TYPE(String iNST_TYPE) {
+    this.INST_TYPE = iNST_TYPE;
+}
+/**
+ * @param lAST_MODIDT the lAST_MODIDT to set
+ */
+public void setLAST_MODIDT(String lAST_MODIDT) {
+    this.LAST_MODIDT = lAST_MODIDT;
+}
+/**
+ * @param oC_FLAG the oC_FLAG to set
+ */
+public void setOC_FLAG(String oC_FLAG) {
+    this.OC_FLAG = oC_FLAG;
+}
+
+public String toString() {
+    return "{" + TRADENUM+ "   " + BS_IND +  "   " +BROK_ID+"   "+ PART_CODE+"   "+INST_TYPE+"  "+SYMBOL+"   "+EXP_DATE+"   "+STR_PRICE+"   "+OPT_TYPE+"   "+TRD_QTY+"   "+TRD_PRICE+"   "+GV_STS+"   "+OC_FLAG+"   "+CU_FLAG+"   "+ORDER_NUM+"   "+LAST_MODIDT+" "+RESERVED+" }";
+}
+
+// @Override
+// public boolean equals(Object obj) {
+//     if(obj instanceof Giveupwithheader){
+//         return ((Giveupwithheader)obj).TRADENUM==TRADENUM &&
+//         ((Giveupwithheader)obj).BS_IND==BS_IND  &&
+//         ((Giveupwithheader)obj).BROK_ID==BROK_ID  &&
+//         ((Giveupwithheader)obj).PART_CODE==PART_CODE  && 
+//         ((Giveupwithheader)obj).INST_TYPE==INST_TYPE  &&
+//         ((Giveupwithheader)obj).SYMBOL==SYMBOL  &&
+//         ((Giveupwithheader)obj).EXP_DATE==EXP_DATE  &&
+//         ((Giveupwithheader)obj).STR_PRICE==STR_PRICE  &&
+//         ((Giveupwithheader)obj).OPT_TYPE==OPT_TYPE  &&
+//         ((Giveupwithheader)obj).TRD_QTY==TRD_QTY  &&
+//         ((Giveupwithheader)obj).TRD_PRICE==TRD_PRICE  &&
+//         ((Giveupwithheader)obj).GV_STS==GV_STS  &&
+//         ((Giveupwithheader)obj).OC_FLAG==OC_FLAG  &&s
+//         ((Giveupwithheader)obj).CU_FLAG==CU_FLAG  &&
+//         ((Giveupwithheader)obj).ORDER_NUM==ORDER_NUM  &&
+//         ((Giveupwithheader)obj).LAST_MODIDT==LAST_MODIDT  &&
+//         ((Giveupwithheader)obj).RESERVED==RESERVED;
+//     }
+//     return false;
+// }  
+}
